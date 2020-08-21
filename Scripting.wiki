@@ -5,6 +5,9 @@ List of basic scripts examples:
 - [[Create vehicle using functions]]
 - [[Drop money when killed]]
 -
+List of basic snippets:
+- [[Snippets]]
+
 === Links ===
 - [Arma 3 Scripting Commands](https://community.bistudio.com/wiki/Category:Scripting_Commands)
 - [Arma 3 Scripting Commands by functionality](https://community.bistudio.com/wiki/Scripting_Commands_by_Functionality)
