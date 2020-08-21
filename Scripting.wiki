@@ -1,0 +1,13 @@
+= Cookbook =
+List of basic scripts examples:
+- [[Send Message to remote server]]
+- [[Send message to server, them receive in client]]
+- [[Create vehicle using functions]]
+
+=== Links ===
+- [RemoteExec](https://community.bistudio.com/~/remoteExec) - Execute Remote function
+- [publicvariableServer]()
+- addPublicVariableEventHandler
+- clientOwner
+- player
+- addAction

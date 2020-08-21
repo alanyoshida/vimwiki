@@ -1,0 +1,44 @@
+=== Create vehicle using functions ==
+
+init.sqf - Init script on client side
+{{{
+
+# Method 1 with trigger and passing parameter
+_createVehicleFn1 = {
+  _vehicle = _this select 0;
+  _pos = getPosATL spawnTrigger;
+  _veh = "C_Hatchback_01_F" createVehicle [ _pos select 0, _pos select 1, _pos select 2];
+};
+["C_Hatchback_01_F"] call _createVehicleFn1;
+
+# Method 2 with marker
+_createVehicleFn2 = {
+  _veh = "C_Hatchback_01_F" createVehicle getMarkerPos "spawnMarker";
+};
+call _createVehicleFn2;
+
+# Method 3 with trigger and passing parameter with different syntax
+_createVehicleFn3 = {
+  _pos = getPosATL spawnTrigger;
+  _veh = createVehicle [_vehicle, [ _pos select 0, _pos select 1, _pos select 2], [], 0, "NONE"]
+};
+
+["C_Hatchback_01_F"] call _createVehicleFn3;
+
+player addAction ["Send Message", {
+}];
+
+}}}
+
+initServer.sqf - Init script on server side
+{{{
+
+"sendThisMessage" addPublicVariableEventHandler {
+  private ["_data"];
+  _data = (_this select 1);
+
+};
+
+}}}
+
+

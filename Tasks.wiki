@@ -1,0 +1,8 @@
+== Todo list ==
+
+Todo:
+- [ ] Watch youtube playlist about arma 3 scripting
+- [ ] Make some script cookbooks
+- [ ] Make a mission in altis with zombies
+- [ ] Fix mission on Chernarus
+

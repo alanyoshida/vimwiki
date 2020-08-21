@@ -1,0 +1,44 @@
+== Send message to server, them receive in client ==
+
+init.sqf - Init script on client side
+{{{
+
+player addAction ["Send Message",
+{
+  _clientId = clientOwner;
+  _name = name player;
+  toTheServer = [_clientId, _name];
+  publicVariableServer "toTheServer"
+}];
+
+"toTheClient" addPublicVariableEventHandler
+{
+  private ["_data"];
+  _data = _this select 1;
+  _message = _data select 0;
+  _name  = _data select 1;
+
+  _newMessage = _message + _name;
+  hint _newMessage;
+};
+
+}}}
+
+initServer.sqf - Init script on server side
+{{{
+
+"toTheServer" addPublicVariableEventHandler
+{
+  private ["_data"];
+  _data = (_this select 1);
+  _clientId = (_this select 0);
+  _playerName = (_this select 1);
+
+  _message = "Joined the server"
+  toTheClient = [_message, _playerName];
+  _clientId publicVariableClient "toTheClient";
+
+};
+
+}}}
+

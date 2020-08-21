@@ -1,0 +1,26 @@
+== Send message to remote server ==
+
+init.sqf - Init script on client side
+{{{
+
+hint "Message on client";
+
+player addAction ["Send Message",
+{
+  sendThisMessage = "This is my message";
+  publicVariableServer "sendThisMessage";
+}];
+
+}}}
+
+initServer.sqf - Init script on server side
+{{{
+
+"sendThisMessage" addPublicVariableEventHandler
+{
+  _message = (_this select 1);
+  _message remoteExec [ "hint", 0, true];
+};
+
+}}}
+
