@@ -3,11 +3,34 @@ List of basic scripts examples:
 - [[Send Message to remote server]]
 - [[Send message to server, them receive in client]]
 - [[Create vehicle using functions]]
-
+- [[Drop money when killed]]
+-
 === Links ===
+- [Arma 3 Scripting Commands](https://community.bistudio.com/wiki/Category:Scripting_Commands)
+- [Arma 3 Scripting Commands by functionality](https://community.bistudio.com/wiki/Scripting_Commands_by_Functionality)
+- [Arma 3 functions](https://community.bistudio.com/wiki/Category:Arma_3:_Functions)
+- [Remote execution](https://community.bistudio.com/wiki/Category:Arma_3:_Remote_Execution)
+- [Event scripts](https://community.bistudio.com/wiki/Event_Scripts)
+- [SQF syntax](https://community.bistudio.com/wiki/SQF_syntax)
+- [Assets](https://community.bistudio.com/wiki/Category:Arma_3:_Assets)
+
+
+=== Functions ===
 - [RemoteExec](https://community.bistudio.com/~/remoteExec) - Execute Remote function
-- [publicvariableServer]()
-- addPublicVariableEventHandler
-- clientOwner
-- player
-- addAction
+- [publicvariableServer](https://community.bistudio.com/wiki/publicVariableServer)
+- [addPublicVariableEventHandler](https://community.bistudio.com/wiki/addPublicVariableEventHandler)
+- [clientOwner](https://community.bistudio.com/wiki/clientOwner)
+- [player](https://community.bistudio.com/wiki/player)
+- [allPlayer](https://community.bistudio.com/wiki/allPlayers)
+- [allUnits](https://community.bistudio.com/wiki/allUnits)
+- [addAction](https://community.bistudio.com/wiki/addAction)
+- [clientOwner](https://community.bistudio.com/wiki/clientOwner)
+- [select](https://community.bistudio.com/wiki/select)
+- [hint](https://community.bistudio.com/wiki/hint)
+- [publicVariableClient](https://community.bistudio.com/wiki/publicVariableClient)
+- [setVariable](https://community.bistudio.com/wiki/setVariable)
+- [getVariable](https://community.bistudio.com/wiki/getVariable)
+- [createVehicle](https://community.bistudio.com/wiki/createVehicle)
+- [getPosATL](https://community.bistudio.com/wiki/getPosATL)
+- [getMarkerPos](https://community.bistudio.com/wiki/getMarkerPos)
+- [call](https://community.bistudio.com/wiki/call)
