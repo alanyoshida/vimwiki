@@ -1,0 +1,60 @@
+== Basic Team Deathmatch ==
+This scripts create a basic Death count for basic death match.
+
+initServer.sqf
+{{{
+
+execVM "publicEventHandlers.sqf";
+
+{
+  if ((side _x) == WEST) then {
+    _x addEventHandler ["Killed",{
+      _unitSide = (side _this select 0);
+      _killerSide = (side _this select 1);
+      if (_unitSide == _killerSide) then {
+        "BLUFOR TEAMKILL" remoteExec ["hint"];
+      } else {
+        publicVariableServer "bluforKilled";
+      }
+    }];
+  }
+
+  if ((side _x) == WEST) then {
+    _x addEventHandler ["Killed",{
+      _unitSide = (side _this select 0);
+      _killerSide = (side _this select 1);
+      if (_unitSide == _killerSide) then {
+        "OPFOR TEAMKILL" remoteExec ["hint"];
+      } else {
+        publicVariableServer "opforKilled";
+      }
+    }];
+  }
+} forEach allUnits;
+
+}}}
+
+publicEventHandlers.sqf
+{{{
+
+killLimit = 3;
+bluforDeaths = 0;
+opforDeaths = 0;
+
+"bluforKilled" addPublicVariableEventHandler {
+  bluforDeaths = bluforDeaths + 1;
+  if ( bluforDeaths >= killLimit) then {
+    "BLUFOR LIMIT REACHED" remoteExec ["hint"];
+    [] remoteExec "BIS_fnc_endMission"
+  }
+}
+
+"opforKilled" addPublicVariableEventHandler {
+  opforDeaths= bluforDeaths + 1;
+  if ( bopforDeath >= killLimit) then {
+    "OPFOR LIMIT REACHED" remoteExec ["hint"];
+    [] remoteExec "BIS_fnc_endMission"
+  }
+}
+
+}}}
