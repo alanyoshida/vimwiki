@@ -5,6 +5,7 @@ List of basic scripts examples:
 - [[Create vehicle using functions]]
 - [[Drop money when killed]]
 - [[Basic team deathmatch]]
+- [[Making a Safe Zone]]
 
 List of basic snippets:
 - [[Snippets]]

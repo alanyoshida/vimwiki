@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Send Message to remote server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Send message to remote server"><h2 id="Send message to remote server" class="header"><a href="#Send message to remote server">Send message to remote server</a></h2></div>
+
+<p>
+init.sqf - Init script on client side
+</p>
+<pre>
+
+hint "Message on client";
+
+player addAction ["Send Message",
+{
+  sendThisMessage = "This is my message";
+  publicVariableServer "sendThisMessage";
+}];
+
+</pre>
+
+<p>
+initServer.sqf - Init script on server side
+</p>
+<pre>
+
+"sendThisMessage" addPublicVariableEventHandler
+{
+  _message = (_this select 1);
+  _message remoteExec [ "hint", 0, true];
+};
+
+</pre>
+
+</body>
+</html>
