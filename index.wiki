@@ -8,6 +8,6 @@ My personal wiki page using [[https://github.com/vimwiki/vimwiki|vimwiki]]
   * [[Fish + Bash]]
 
 == Arma 3 ==
-  * [[Scripting]]: Some code to use in your arma 3 missions
-  * [[Tasks]]
+  * [[Scripting]] - Arma 3 cookbooks
+  * [[Tasks]] - Todo list
 
