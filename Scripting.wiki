@@ -1,5 +1,5 @@
-= Cookbook =
-List of basic scripts examples:
+= Arma 3 Cookbook =
+List of basic script examples:
 - [[Send Message to remote server]]
 - [[Send message to server, them receive in client]]
 - [[Create vehicle using functions]]

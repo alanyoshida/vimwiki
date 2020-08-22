@@ -1,0 +1,9 @@
+== Fish + Bash ==
+
+- Ctrl + A = Go to beggining of line
+- Ctrl + E = Go to end of line
+- Alt + F = Go to next word
+- Alt + B = Go to previous word
+- Alt + D = Delete word on right of cursor
+- Ctrl + W = Delete word on left of cursor
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Basic team deathmatch</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Basic Team Deathmatch"><h2 id="Basic Team Deathmatch" class="header"><a href="#Basic Team Deathmatch">Basic Team Deathmatch</a></h2></div>
+<p>
+This scripts create a basic Death count for basic death match.
+</p>
+
+<p>
+initServer.sqf
+</p>
+<pre>
+
+execVM "publicEventHandlers.sqf";
+
+{
+  if ((side _x) == WEST) then {
+    _x addEventHandler ["Killed",{
+      _unitSide = (side _this select 0);
+      _killerSide = (side _this select 1);
+      if (_unitSide == _killerSide) then {
+        "BLUFOR TEAMKILL" remoteExec ["hint"];
+      } else {
+        publicVariableServer "bluforKilled";
+      }
+    }];
+  }
+
+  if ((side _x) == WEST) then {
+    _x addEventHandler ["Killed",{
+      _unitSide = (side _this select 0);
+      _killerSide = (side _this select 1);
+      if (_unitSide == _killerSide) then {
+        "OPFOR TEAMKILL" remoteExec ["hint"];
+      } else {
+        publicVariableServer "opforKilled";
+      }
+    }];
+  }
+} forEach allUnits;
+
+</pre>
+
+<p>
+publicEventHandlers.sqf
+</p>
+<pre>
+
+killLimit = 3;
+bluforDeaths = 0;
+opforDeaths = 0;
+
+"bluforKilled" addPublicVariableEventHandler {
+  bluforDeaths = bluforDeaths + 1;
+  if ( bluforDeaths &gt;= killLimit) then {
+    "BLUFOR LIMIT REACHED" remoteExec ["hint"];
+    [] remoteExec "BIS_fnc_endMission"
+  }
+}
+
+"opforKilled" addPublicVariableEventHandler {
+  opforDeaths= bluforDeaths + 1;
+  if ( bopforDeath &gt;= killLimit) then {
+    "OPFOR LIMIT REACHED" remoteExec ["hint"];
+    [] remoteExec "BIS_fnc_endMission"
+  }
+}
+
+</pre>
+
+</body>
+</html>

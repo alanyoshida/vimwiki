@@ -1,4 +1,11 @@
 = Alan Yoshida wiki =
+My personal wiki page using [[https://github.com/vimwiki/vimwiki|vimwiki]]
+
+== My Shorcuts ==
+  * [[Tmux]]
+  * [[Vim + NerdTree]]
+  * [[KDE]]
+  * [[Fish + Bash]]
 
 == Arma 3 ==
   * [[Scripting]]: Some code to use in your arma 3 missions

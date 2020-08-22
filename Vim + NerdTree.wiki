@@ -1,0 +1,36 @@
+== VIM + NERDTree ==
+
+- Ctrl + o = Open nerdtree
+- Shift + i = Show hidden files with .file
+- Shift + ? = Help on Nerdtree
+- [Space] = Vim Prefix
+- `prefix` + Left = Go to left vim window
+- `prefix` + Right = Go to right vim window
+- `prefix` + s = Split window horizontal
+- `prefix` + v = Split window vertical
+- u = Undo last change
+- `Ctrl + r` = Redo last change
+- Shift + d = Delete the rest of the line
+- Shift + v = Volume in line mode
+- Ctrl + v = Volume in column mode
+- Ctrl + v, select lines, SHIFT + $ + A, Esc, Esc = Append to the end of the line
+- y + w = Copy word under cursor
+  - d + w = Cut word under cursor
+- /<search> = Search, use `n` for next, `Shift + n` for previous
+- :%s/<regex_search>/<regex_replace>/ = Replace using regex
+- :%s/<regex_search>/<regex_replace>/c = Replace asking confirmation
+- :!<shell_command> - Execute shell command in bash
+- :%!<shell_command> - Execute command and get the result and replace current window
+- With word under cursor, `*`, `ciw` (current inner word) + Esc, `n` for next, `.` for replace = Replace interative mode
+- With word under cursor, `/`, `Ctrl + r`, `Ctrl + w`, `Enter` = Search for word under cursor
+- :noh = Disable search highlight
+- :set wrap = Break lines on the end of the screen
+- :set nowrap = Don't break lines on the end of the screen
+- :set nonu = Don't show line numbers
+- :tabnew <file> = Open file in new tab
+- gt = next vim tab
+- gT = previous vim tab
+- {i}gt = go to tab number
+- :tabn = next tab
+- :tabp = previous tab
+
