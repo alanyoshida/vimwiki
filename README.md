@@ -8,7 +8,13 @@ This wiki uses [vimwiki](https://github.com/vimwiki/vimwiki)
 
 ## How it works
 
-Install vimwiki in your vim
+Install [vimwiki](https://github.com/vimwiki/vimwiki) in your vim.
+
+Vimwiki basic navigation:
+ - Tab = next link
+ - Shift + Tab = Previous link
+ - Enter = Enter the link
+ - Backspace = Back to previous link
 
 Set the wiki configuration in your .vimrc file:
 
