@@ -1,4 +1,4 @@
-=== Create vehicle using functions ==
+== Create vehicle using functions ==
 
 init.sqf - Init script on client side
 {{{
