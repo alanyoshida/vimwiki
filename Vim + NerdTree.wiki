@@ -2,8 +2,7 @@
 
 - [Space] = Vim Prefix
 
-## Navigation
-
+=== Navigation ===
 - `prefix` + Left = Go to left vim window
 - `prefix` + Right = Go to right vim window
 - `prefix` + s = Split window horizontal
@@ -11,7 +10,7 @@
 - gg = Go to top of page
 - Shift + g = Go to end of page
 
-## Editing
+=== Editing ===
 
 - yy = Copy line
 - dd = Delete current line
@@ -20,9 +19,9 @@
 - d + w = Cut word under cursor
 - `Ctrl + r` = Redo last change
 - Shift + d = Delete the rest of the line
-- dgg = Delete the rest of the file
+- d + Shift + g = Delete the rest of the file
 
-## Volume
+=== Volume ===
 
 - Shift + v = Volume in line mode
 - Shift + v + < = Indent left
@@ -31,17 +30,18 @@
 - Ctrl + v, select lines, SHIFT + $ + A, Esc, Esc = Append to the end of the line
 - Ctrl + v, select lines, Shift + i, change, Esc, Esc = Multiple line edit
 
-## Search and Replace
+=== Search and Replace ===
 
 - /<search> = Search, use `n` for next, `Shift + n` for previous
 - :%s/<regex_search>/<regex_replace>/ = Replace using regex
+- :%s/<regex_search>/<regex_replace>/g = Replace using regex in all file
 - :%s/<regex_search>/<regex_replace>/c = Replace asking confirmation
 - With word under cursor, `*`, `ciw` (current inner word) + Esc, `n` for next, `.` for replace = Replace interative mode
 - With word under cursor, `*`, `n` for next = Search words
 - With word under cursor, `/`, `Ctrl + r`, `Ctrl + w`, `Enter` = Search for word under cursor
 - :noh = Disable search highlight
 
-## Commands
+=== Commands ===
 
 - :!<shell_command> - Execute shell command in bash
 - :%!<shell_command> - Execute command and get the result and replace current window
@@ -49,7 +49,7 @@
 - :set nowrap = Don't break lines on the end of the screen
 - :set nonu = Don't show line numbers
 
-## Tab Navigation
+=== Tab Navigation ===
 
 - :tabnew <file> = Open file in new tab
 - gt = next vim tab
@@ -59,7 +59,7 @@
 - :tabn = next tab
 - :tabp = previous tab
 
-## Nerdtree
+=== Nerdtree ===
 
 - Ctrl + o = Open nerdtree
 - Shift + i = Show hidden files with .file
