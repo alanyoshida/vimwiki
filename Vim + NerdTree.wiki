@@ -20,6 +20,8 @@
 - `Ctrl + r` = Redo last change
 - Shift + d = Delete the rest of the line
 - d + Shift + g = Delete the rest of the file
+- Shift + > = Indent Right
+- Shift + < = Indent Left
 
 === Volume ===
 
