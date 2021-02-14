@@ -31,6 +31,7 @@
 - Ctrl + v = Volume in column mode
 - Ctrl + v, select lines, SHIFT + $ + A, Esc, Esc = Append to the end of the line
 - Ctrl + v, select lines, Shift + i, change, Esc, Esc = Multiple line edit
+- Ctrl + v, select lines, Shift + A, change, Esc, Esc = Multiple line append
 - v + lines, :!sort = Sort selected lines
 
 === Search and Replace ===
