@@ -1,6 +1,8 @@
 
 == Tmux ==
 
+- `prefix` + " = Split window horizontally
+- `prefix` + % = Split window vertically
 - `$ tmux a` = Attach to last tmux session
 - Ctrl + b = Default tmux `prefix`
 - `prefix` + r = Reload ~/.tmux.conf
@@ -13,7 +15,6 @@
 - `prefix` + ] = Paste
 - `prefix` + d = Detach window
 - `prefix` + z = Zoom in window
-- `prefix` + | = Split window
 - Alt + Left | Ctrl + j = Move to left window
 - Alt + Right | Ctrl + k = Move to right window
 - Alt + j = Move window to left
