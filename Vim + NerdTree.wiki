@@ -3,10 +3,10 @@
 - [Space] = Vim Prefix
 
 === Navigation ===
-- `prefix` + Left = Go to left vim window
-- `prefix` + Right = Go to right vim window
 - `prefix` + s = Split window horizontal
 - `prefix` + v = Split window vertical
+- `prefix` + Left = Go to left vim window
+- `prefix` + Right = Go to right vim window
 - gg = Go to top of page
 - Shift + g = Go to end of page
 
@@ -31,6 +31,7 @@
 - Ctrl + v = Volume in column mode
 - Ctrl + v, select lines, SHIFT + $ + A, Esc, Esc = Append to the end of the line
 - Ctrl + v, select lines, Shift + i, change, Esc, Esc = Multiple line edit
+- v + lines, :!sort = Sort selected lines
 
 === Search and Replace ===
 
@@ -50,6 +51,9 @@
 - :set wrap = Break lines on the end of the screen
 - :set nowrap = Don't break lines on the end of the screen
 - :set nonu = Don't show line numbers
+- :terminal = Open the terminal
+- :o <file> = new file
+- :e <file> = edit file
 
 === Tab Navigation ===
 
