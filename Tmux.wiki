@@ -1,6 +1,7 @@
 
 == Tmux ==
 
+- `prefix` + ? = Shortcut keys
 - `prefix` + " = Split window horizontally
 - `prefix` + % = Split window vertically
 - `$ tmux a` = Attach to last tmux session
@@ -13,8 +14,10 @@
 - `prefix` + , = Rename window
 - `prefix` + [ = Copy mode
 - `prefix` + ] = Paste
+- `prefix` + Space = Begin Selection
 - `prefix` + d = Detach window
 - `prefix` + z = Zoom in window
+- `prefix` + / = Search
 - Alt + Left | Ctrl + j = Move to left window
 - Alt + Right | Ctrl + k = Move to right window
 - Alt + j = Move window to left
