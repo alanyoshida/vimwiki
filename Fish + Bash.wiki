@@ -6,4 +6,10 @@
 - Alt + B = Go to previous word
 - Alt + D = Delete word on right of cursor
 - Ctrl + W = Delete word on left of cursor
+- Alt + U = Capitalize word
+- Alt + L = Uncapitalize word
+- Alt + C = Capitalize character under cursor
+- Ctrl + Y = Paste from clipboard
+- Ctrl + U = Cut everything before cursor
+- Ctrl + L = Clear screen
 
