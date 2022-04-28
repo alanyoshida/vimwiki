@@ -2,3 +2,6 @@
 
 - Ctrl + Shift + Left = Go to left desktop
 - Ctrl + Shift + Right = Go to right desktop
+- Meta + Shift = Draw on screen
+- Meta + "+" = Zoom In
+- Meta + "-" = Zoom Out
