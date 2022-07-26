@@ -1,5 +1,7 @@
 == Fish + Bash ==
 
+## Emacs bindings
+
 - Ctrl + A = Go to beggining of line
 - Ctrl + E = Go to end of line
 - Alt + F = Go to next word
@@ -10,6 +12,7 @@
 - Alt + L = Uncapitalize word
 - Alt + C = Capitalize character under cursor
 - Ctrl + Y = Paste from clipboard
-- Ctrl + U = Cut everything before cursor
+- Ctrl + U = Cut everything before the cursor
+- Ctrl + K = Cut everything after the cursor
 - Ctrl + L = Clear screen
-
+- Alt + . = Get last parameter and put in the end of cursor
